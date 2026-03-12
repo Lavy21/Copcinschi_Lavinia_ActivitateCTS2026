@@ -1,4 +1,4 @@
-package cts.ase.ro.builder.clase;
+package cts.ase.ro.clase.builder;
 
 public class Rezervare {
     private boolean laUsa;
