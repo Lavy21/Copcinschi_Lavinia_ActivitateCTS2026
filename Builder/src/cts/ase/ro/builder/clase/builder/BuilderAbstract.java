@@ -1,4 +1,6 @@
-package cts.ase.ro.clase.builder;
+package cts.ase.ro.builder.clase.builder;
+
+import cts.ase.ro.builder.clase.Rezervare;
 
 public interface BuilderAbstract {
     Rezervare build();

@@ -1,7 +1,7 @@
-package cts.ase.ro.clase.builder2;
+package cts.ase.ro.builder.clase.builder2;
 
-import cts.ase.ro.clase.builder.BuilderAbstract;
-import cts.ase.ro.clase.builder.Rezervare;
+import cts.ase.ro.builder.clase.builder.BuilderAbstract;
+import cts.ase.ro.builder.clase.Rezervare;
 //varianta2
 
 public class RezervareBuilder2 implements BuilderAbstract {

@@ -1,9 +1,9 @@
-package cts.ase.ro.clase.program;
+package cts.ase.ro.builder.program;
 
-import cts.ase.ro.clase.builder.BuilderAbstract;
-import cts.ase.ro.clase.builder.Rezervare;
-import cts.ase.ro.clase.builder.RezervareBuilder;
-import cts.ase.ro.clase.builder2.RezervareBuilder2;
+import cts.ase.ro.builder.clase.builder.BuilderAbstract;
+import cts.ase.ro.builder.clase.Rezervare;
+import cts.ase.ro.builder.clase.builder.RezervareBuilder;
+import cts.ase.ro.builder.clase.builder2.RezervareBuilder2;
 
 public class Program {
     public static void main(String[] args) {

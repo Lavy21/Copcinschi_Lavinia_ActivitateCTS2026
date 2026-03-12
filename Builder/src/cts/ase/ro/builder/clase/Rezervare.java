@@ -1,4 +1,4 @@
-package cts.ase.ro.clase.builder;
+package cts.ase.ro.builder.clase;
 
 public class Rezervare {
     private boolean laUsa;
@@ -44,7 +44,7 @@ public class Rezervare {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Rezervare{");
+        final StringBuilder sb = new StringBuilder("RezervareFinala{");
         sb.append("laUsa=").append(laUsa);
         sb.append(", comandaElectronicaPat=").append(comandaElectronicaPat);
         sb.append(", culoareAsternut='").append(culoareAsternut).append('\'');
