@@ -3,6 +3,7 @@ package cts.ase.ro.clase.program;
 import cts.ase.ro.clase.builder.BuilderAbstract;
 import cts.ase.ro.clase.builder.Rezervare;
 import cts.ase.ro.clase.builder.RezervareBuilder;
+import cts.ase.ro.clase.builder2.RezervareBuilder2;
 
 public class Program {
     public static void main(String[] args) {
@@ -19,5 +20,11 @@ public class Program {
         Rezervare r6=new RezervareBuilder().setCuloareAsternut("Azul").build();
         System.out.println(r5.toString());
         System.out.println(r6.toString());
+
+        BuilderAbstract builder2=new RezervareBuilder2();
+        Rezervare r7=builder2.setGenProgrameTV("Musical").setNrPacienti(10).build();
+        Rezervare r8=builder2.setNrPacienti(15).build();
+        System.out.println(r7.toString());
+        System.out.println(r8.toString());
     }
 }
