@@ -1,6 +1,7 @@
 package Program;
 
 import ase.cts.ro.eager.SpitalEager;
+import ase.cts.ro.lazy.SpitalLazy;
 import ase.cts.ro.staticblock.SpitalStaticBlock;
 
 public class Program {
@@ -31,5 +32,10 @@ public class Program {
         System.out.println("Dupa modificare:");
         System.out.println(spitalStatic1);
         System.out.println(spitalStatic2);
+
+        SpitalLazy sl1=SpitalLazy.getInstanta("ABC","Str. Coronita", 30,50);
+        SpitalLazy sl2=SpitalLazy.getInstanta("DEF","Str. Mistral", 40,80);
+        System.out.println(sl1);
+        System.out.println(sl2);
     }
 }

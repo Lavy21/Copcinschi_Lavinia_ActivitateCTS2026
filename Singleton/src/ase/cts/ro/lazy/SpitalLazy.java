@@ -1,22 +1,18 @@
-package ase.cts.ro.eager;
+package ase.cts.ro.lazy;
 
-public class SpitalEager {
+public class SpitalLazy {
     private String numeSpital;
     private String adresaSpital;
     private int nrMaxPacienti;
     private int nrCamere;
 
-    private static final SpitalEager instanta = new SpitalEager();
+    private static SpitalLazy instanta = null;
 
-    private SpitalEager() {
-        this.numeSpital = "ABC";
-        this.adresaSpital = "Str. Principala Nr.19";
-        this.nrMaxPacienti = 10;
-        this.nrCamere = 20;
-    }
-
-    public static SpitalEager getInstanta() {
-        return instanta;
+    public SpitalLazy(String numeSpital, String adresaSpital, int nrMaxPacienti, int nrCamere) {
+        this.numeSpital = numeSpital;
+        this.adresaSpital = adresaSpital;
+        this.nrMaxPacienti = nrMaxPacienti;
+        this.nrCamere = nrCamere;
     }
 
     public String getNumeSpital() {
@@ -49,6 +45,17 @@ public class SpitalEager {
 
     public void setNrCamere(int nrCamere) {
         this.nrCamere = nrCamere;
+    }
+
+    public static SpitalLazy getInstanta(String numeSpital, String adresaSpital, int nrMaxPacienti, int nrCamere) {
+        if (instanta == null) {
+            instanta = new SpitalLazy(numeSpital, adresaSpital, nrMaxPacienti, nrCamere);
+        }
+        return instanta;
+    }
+
+    public static void setInstanta(SpitalLazy instanta) {
+        SpitalLazy.instanta = instanta;
     }
 
     @Override
